@@ -1,0 +1,34 @@
+.product-hero, .product-info {
+    flex: 1;
+}
+.product-hero img {
+    max-width: 100%;
+}
+.main-info, #purchase-form {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.one-half {
+    flex: 1 0 50%;
+}
+.product-info {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.description {
+    flex: 3;
+    min-height: 33%;
+}
+#purchase-form select {
+    width: 100%;
+}
+#pImage {
+    max-width: 100%;
+}
+
+.section {
+    padding: 100px 0;
+}

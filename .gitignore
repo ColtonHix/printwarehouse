@@ -1,0 +1,3 @@
+config.json
+resources/*
+!resources/benchy.png
