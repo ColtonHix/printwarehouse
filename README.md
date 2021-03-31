@@ -18,7 +18,9 @@ Print Warehouse
 
  <sup><sub>That was a joke&trade;</sup></sub>
 
-
+ - For some reason, Heroku likes to delete product images when I push, or when it spins off. I don't know if this is from my gitignore, heroku itself, or what. Text data stored in the database is staying and retrieving as expected, but images are just being removed for some reason. Ideally images are stored on a third party like cloudfront but I did not set that up for this homework assignment.
+    - Creating fresh products will retain their images (until I push)
+    - I probably just didn't configure my gitignore correctly, but I'd rather not push 30 random test images to Heroku every time I push hence the gitignore so I'll let you create your own :)
 
 ## Create your forms requirement
 - I may have forgot about/cut some forms but I believe most are there
@@ -71,9 +73,6 @@ Only the connection is
  - I am aware the search bar can make the header display weird and does nothing. I'm not sure how I want to handle searching & sorting yet, so I left it there as a placeholder.
  - Product and Request lists are not paginated (yet...) they will display everything in a big list
  - The site isn't fully size responsive. There are a few scaling areas in between the bootstrap resize breakpoints where you enter the twilight zone and things may get funky. Site should look fine for most screen sizes though.
- - For some reason, Heroku likes to delete product images when I push. I don't know if this is from my gitignore, heroku itself, or what.
-    - Creating fresh products will retain their images (until I push)
-    - I probably just didn't configure my gitignore correctly, but I'd rather not push 30 random test images to Heroku every time I push hence the gitignore so I'll let you create your own :)
  - ClearDB can be a bit slow sometimes; it may take a second or two for a request to go through
     - Eventually I'll make the buttons have a spinner or say loading, but for now they just disable themselves
  - I did not add the front page slider/featured products area. I plan to add that when the site is paginated so the user doesn't see 2 of the same product on the page all the time.
